@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "382606be4191420c7b27bf8150c9c4c5",
+    "content-hash": "5695a7baf91f6d2fee7916504de5f87f",
     "packages": [
         {
             "name": "phpstan/phpstan",
@@ -1602,16 +1602,16 @@
         },
         {
             "name": "phpspec/prophecy-phpunit",
-            "version": "v2.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy-phpunit.git",
-                "reference": "16e1247e139434bce0bac09848bc5c8d882940fc"
+                "reference": "31f0f0947db574a92dc466f6300fbb54962942d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy-phpunit/zipball/16e1247e139434bce0bac09848bc5c8d882940fc",
-                "reference": "16e1247e139434bce0bac09848bc5c8d882940fc",
+                "url": "https://api.github.com/repos/phpspec/prophecy-phpunit/zipball/31f0f0947db574a92dc466f6300fbb54962942d3",
+                "reference": "31f0f0947db574a92dc466f6300fbb54962942d3",
                 "shasum": ""
             },
             "require": {
@@ -1619,6 +1619,10 @@
                 "phpspec/prophecy": "^1.18",
                 "phpunit/phpunit": "^9.1 || ^10.1 || ^11.0"
             },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10"
+            },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1648,9 +1652,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpspec/prophecy-phpunit/issues",
-                "source": "https://github.com/phpspec/prophecy-phpunit/tree/v2.2.0"
+                "source": "https://github.com/phpspec/prophecy-phpunit/tree/master"
             },
-            "time": "2024-03-01T08:33:58+00:00"
+            "time": "2024-03-27T11:51:15+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4571,9 +4575,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "phpspec/prophecy-phpunit": 20
+    },
     "prefer-stable": false,
-    "prefer-lowest": true,
+    "prefer-lowest": false,
     "platform": {
         "php": "^7.4 || ^8.0"
     },

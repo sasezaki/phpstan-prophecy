@@ -22,7 +22,7 @@
     "ergebnis/license": "^1.0.0",
     "ergebnis/php-cs-fixer-config": "^4.0 || ^5.0 || ^6.0",
     "phpspec/prophecy": "^1.7.0",
-    "phpspec/prophecy-phpunit": "^2.2",
+    "phpspec/prophecy-phpunit": "dev-master",
     "phpunit/phpunit": "^9.1.0"
   },
   "config": {
