@@ -50,7 +50,12 @@ final class WillImplementTest extends Framework\TestCase
 
     public function testCreateProphecyInTestMethod(): void
     {
+        $prophecy = $this->prophesize(Src\Foo::class);
+        $prophecy->willImplement(Src\Bar::class);
+        \PHPStan\dumpType($prophecy);
+
         $prophecy = $this->prophesize(Src\Foo::class)->willImplement(Src\Bar::class);
+        \PHPStan\dumpType($prophecy);
 
         $prophecy
             ->bar()
